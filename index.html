@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taniya Ceciya Savio — Illustrator Portfolio</title>
+<meta name="description" content="Portfolio of Taniya Ceciya Savio, illustrator: character design, assets, environments, self portraits, motion illustration, card illustration, illustration and storyboards.">
+<meta property="og:title" content="Taniya Ceciya Savio — Illustrator Portfolio">
+<meta property="og:description" content="Portfolio of Taniya Ceciya Savio, illustrator: character design, assets, environments, self portraits, motion illustration, card illustration, illustration and storyboards.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/image1.webp">
+<meta name="theme-color" content="#0e0e0e">
+<script>document.documentElement.classList.add("js");</script>
+<style>
+@font-face { font-family: "Press Start 2P"; src: url("assets/fonts/press-start-2p.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "Glacial Indifference"; src: url("assets/fonts/glacial-indifference-bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+:root {
+  --red: #E80000; --red-deep: #b80000; --yellow: #FFCB05;
+  --ink: #141414; --muted: #5d5d5d; --page: #ffffff; --soft: #f4f4f4; --line: #e9e9e9;
+  --night: #0e0e0e; --night-2: #1a1a1a; --night-text: #f1f1f1; --night-muted: #a9a9a9;
+  --font-pixel: "Press Start 2P", ui-monospace, monospace;
+  --font-glacial: "Glacial Indifference", "Helvetica Neue", Arial, sans-serif;
+  --font-ui: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --gutter: clamp(16px, 4vw, 56px);
+  --max: 1520px;
+  --ease: cubic-bezier(.2,.7,.2,1);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body { margin: 0; background: var(--page); color: var(--ink); font-family: var(--font-ui); -webkit-font-smoothing: antialiased; overflow-x: clip; }
+a { color: inherit; }
+img { display: block; }
+button { font: inherit; }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+.pixel { font-family: var(--font-pixel); font-weight: 400; }
+:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- progress + header ---------- */
+.progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; background: var(--red); transform-origin: 0 50%; transform: scaleX(0); z-index: 60; }
+.top { position: fixed; top: 0; left: 0; right: 0; z-index: 50; transition: background .3s, border-color .3s, color .3s; background: rgba(255,255,255,.94); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); color: var(--ink); }
+.top.over-hero { background: transparent; backdrop-filter: none; border-color: transparent; color: var(--night-text); }
+.top-in { max-width: var(--max); margin: 0 auto; padding: 14px var(--gutter); display: flex; align-items: center; gap: 20px; }
+.brand { font-family: var(--font-pixel); font-size: 12px; line-height: 1.6; color: var(--red); text-decoration: none; }
+.links { margin-left: auto; display: flex; align-items: center; gap: 4px; }
+.links a.l { padding: 8px 12px; border-radius: 8px; text-decoration: none; font-size: 15px; }
+.links a.l:hover { color: var(--red); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 11px 20px; border-radius: 999px; border: 0; cursor: pointer; text-decoration: none; font-size: 15px; font-weight: 600; white-space: nowrap; transition: background .2s, color .2s, transform .2s, box-shadow .2s; }
+.btn.red { background: var(--red); color: #fff; }
+.btn.red:hover { background: var(--red-deep); transform: translateY(-1px); box-shadow: 0 6px 18px rgba(232,0,0,.3); }
+.btn.ghost { background: transparent; color: inherit; box-shadow: inset 0 0 0 1.5px currentColor; }
+.btn.ghost:hover { color: var(--red); }
+@media (max-width: 720px) { .links a.l { display: none; } .brand { font-size: 10px; } .top .btn { padding: 9px 14px; font-size: 14px; } }
+
+/* ---------- hero ---------- */
+.hero { background: var(--night); color: var(--night-text); padding: 110px 0 72px; position: relative; overflow: hidden; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(28px, 4vw, 64px); align-items: center; }
+.eyebrow { font-family: var(--font-pixel); color: var(--red); font-size: clamp(13px, 1.3vw, 18px); line-height: 1.6; margin: 0 0 22px; text-shadow: 2px 2px 0 #000; }
+.hero h1 { margin: 0; font-family: var(--font-glacial); font-weight: 700; font-size: clamp(40px, 5.6vw, 86px); line-height: .98; letter-spacing: -.01em; }
+.hero h1 span { display: block; }
+.hero .role { margin: 22px 0 0; font-size: clamp(17px, 1.5vw, 21px); line-height: 1.5; color: var(--night-muted); max-width: 34ch; }
+.hero .role strong { color: var(--night-text); font-weight: 600; }
+.status { display: inline-flex; align-items: center; gap: 10px; margin-top: 26px; font-size: 14px; color: var(--night-text); padding: 8px 14px; border: 1px solid #2c2c2c; border-radius: 999px; }
+.status i { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 0 rgba(34,197,94,.6); animation: ping 2s infinite; }
+@keyframes ping { 70% { box-shadow: 0 0 0 8px rgba(34,197,94,0); } 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); } }
+.hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.hero .btn.ghost { color: var(--night-text); }
+.hero .btn.ghost:hover { color: var(--yellow); }
+.hero-art { perspective: 1400px; }
+.hero-art .slide-wrap { transform-style: preserve-3d; transition: transform .25s ease-out; }
+.hero-art .slide { box-shadow: 0 30px 80px rgba(0,0,0,.55); }
+.scroll-hint { position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%); font-family: var(--font-pixel); font-size: 10px; color: #777; animation: bob 1.8s ease-in-out infinite; text-decoration: none; }
+@keyframes bob { 50% { transform: translate(-50%, 6px); } }
+@media (max-width: 960px) { .hero-grid { grid-template-columns: 1fr; } .hero { padding-top: 96px; } }
+
+/* ---------- section headers ---------- */
+.sec { padding: clamp(64px, 9vw, 120px) 0 0; }
+.sec-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 32px; margin-bottom: clamp(20px, 3vw, 36px); }
+.sec-num { font-family: var(--font-pixel); font-size: 12px; color: var(--red); margin: 0 0 14px; }
+.sec h2 { margin: 0; font-family: var(--font-pixel); font-weight: 400; font-size: clamp(18px, 2.6vw, 34px); line-height: 1.4; color: var(--ink); }
+.sec .cap { margin: 0; color: var(--muted); font-size: 16px; line-height: 1.55; max-width: 52ch; }
+.tw { display: inline-block; white-space: nowrap; }
+.js .tw { clip-path: inset(0 100% 0 0); }
+.js .in .tw { animation: type calc(var(--n) * 45ms) steps(var(--n), end) forwards; }
+.tw::after { content: ""; display: inline-block; width: .55em; height: 1em; margin-left: .25em; vertical-align: -.1em; background: var(--red); animation: blink 1s steps(1) infinite; }
+@keyframes type { to { clip-path: inset(0 -1em 0 0); } }
+@keyframes blink { 50% { opacity: 0; } }
+@media (max-width: 600px) { .tw { white-space: normal; } .js .tw { clip-path: none; } .js .in .tw { animation: none; } }
+
+/* ---------- slides (exact deck reproduction) ---------- */
+.slide-wrap { position: relative; }
+.slide { position: relative; width: 100%; aspect-ratio: 38100000 / 26670000; overflow: hidden; container-type: inline-size; isolation: isolate; border-radius: 6px; box-shadow: 0 1px 2px rgba(0,0,0,.06), 0 12px 36px rgba(0,0,0,.10); }
+.slide .el { position: absolute; overflow: hidden; }
+.slide .el > img, .slide .el > video, .slide .el > a.fill > img { position: absolute; max-width: none; object-fit: fill; }
+.slide .el > a.fill { position: absolute; inset: 0; }
+.slide .el > video { object-fit: cover; }
+.slide .tx { position: absolute; height: auto !important; }
+.slide .tx p { margin: 0; white-space: pre-wrap; }
+.slide .tx a { text-decoration: none; }
+.slide .tx a:hover span { opacity: .7; }
+.slide a.jump { position: absolute; z-index: 6; }
+.slide a.jump:focus-visible { outline: .3cqw solid var(--red); outline-offset: 0; }
+.snd { position: absolute; right: 2.5%; bottom: 2%; z-index: 7; width: 44px; height: 44px; border-radius: 50%; border: 0; background: rgba(0,0,0,.6); color: #fff; font-size: 18px; cursor: pointer; display: grid; place-items: center; }
+.snd:hover { background: rgba(0,0,0,.85); }
+
+/* entrance: slides glide up; their layers settle into the exact deck positions */
+.js .slide-wrap.rv { opacity: 0; translate: 0 48px; transition: opacity .8s var(--ease), translate 1s var(--ease); }
+.js .slide-wrap.rv.in { opacity: 1; translate: 0 0; }
+.js .slide-wrap.rv.flat .el img { scale: 1.08; transition: scale 1.6s var(--ease); }
+.js .slide-wrap.rv.flat.in .el img { scale: 1; }
+.js .slide-wrap.rv:not(.flat) .el:not(.bg), .js .slide-wrap.rv .tx { opacity: 0; translate: 0 4cqw; transition: opacity .7s var(--ease), translate .9s var(--ease); transition-delay: calc(var(--i) * 65ms + 200ms); }
+.js .slide-wrap.rv.in:not(.flat) .el:not(.bg), .js .slide-wrap.rv.in .tx { opacity: 1; translate: 0 0; }
+.js .slide-wrap.done .el, .js .slide-wrap.done .tx { transition-delay: 0s !important; }
+/* hover lift for cards, paintings and contents strips */
+.slide .el.lift { transition: translate .35s var(--ease), filter .35s var(--ease), opacity .7s; }
+.slide .el.lift:hover, .slide .el.lift.hot { translate: 0 -1.4cqw !important; filter: drop-shadow(0 1.4cqw 1.2cqw rgba(0,0,0,.4)); z-index: 5; }
+
+/* slide toolbar */
+.tools { position: absolute; top: 12px; right: 12px; z-index: 8; display: flex; gap: 6px; opacity: 0; transition: opacity .2s; }
+.slide-wrap:hover .tools, .tools:focus-within { opacity: 1; }
+.tools button { width: 40px; height: 40px; border: 0; border-radius: 10px; background: rgba(255,255,255,.92); box-shadow: 0 2px 8px rgba(0,0,0,.2); cursor: pointer; display: grid; place-items: center; color: var(--ink); }
+.tools button:hover, .tools button[aria-pressed="true"] { background: var(--red); color: #fff; }
+.tools svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+@media (hover: none) { .tools { opacity: 1; } .tools .zoom { display: none; } .tools button { width: 36px; height: 36px; } }
+.lens { position: absolute; z-index: 9; width: 260px; height: 260px; border-radius: 50%; overflow: hidden; pointer-events: none; border: 3px solid #fff; box-shadow: 0 0 0 2px var(--red), 0 18px 40px rgba(0,0,0,.4); background: #fff; display: none; }
+.lens .slide { position: absolute; left: 0; top: 0; transform-origin: 0 0; box-shadow: none; border-radius: 0; }
+.slide-wrap.zooming .slide { cursor: zoom-in; }
+.slide-wrap.zooming .lens { display: block; }
+.slide-wrap.zooming a.jump, .slide-wrap.zooming .lift { pointer-events: none; }
+
+/* ---------- layouts ---------- */
+.grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(16px, 2.2vw, 28px); margin-top: clamp(16px, 2.2vw, 28px); }
+@media (max-width: 860px) { .grid2 { grid-template-columns: 1fr; } }
+.stack { display: grid; gap: clamp(16px, 2.2vw, 28px); }
+
+/* about: at-a-glance */
+.glance { display: grid; grid-template-columns: 1.3fr 1.2fr 1fr; gap: 16px; margin-top: 24px; }
+.card { background: var(--soft); border-radius: 14px; padding: 24px 24px 26px; }
+.card h3 { margin: 0 0 14px; font-family: var(--font-pixel); font-weight: 400; font-size: 13px; color: var(--red); }
+.card p, .card li { margin: 0; font-size: 15.5px; line-height: 1.6; color: #2b2b2b; }
+.card ul { margin: 0; padding: 0; list-style: none; }
+.card .yr { font-weight: 700; color: var(--ink); margin-top: 10px; }
+.card .yr:first-of-type { margin-top: 0; }
+.bio { grid-column: 1 / -1; font-size: clamp(17px, 1.5vw, 20px) !important; line-height: 1.6 !important; color: var(--ink) !important; }
+.bars li { display: grid; grid-template-columns: 1fr 44%; align-items: center; gap: 12px; padding: 7px 0; font-weight: 600; }
+.bar { height: 10px; border-radius: 99px; background: #e2e2e2; overflow: hidden; }
+.bar i { display: block; height: 100%; width: var(--v); background: var(--yellow); border-radius: inherit; transform-origin: 0 50%; }
+.js .bar i { transform: scaleX(0); transition: transform 1.2s var(--ease) .2s; }
+.js .in .bar i { transform: scaleX(1); }
+@media (max-width: 960px) { .glance { grid-template-columns: 1fr 1fr; } .glance .card:last-child { grid-column: 1 / -1; } }
+@media (max-width: 620px) { .glance { grid-template-columns: 1fr; } }
+
+/* horizontal character showcase */
+.hs-sticky { position: relative; }
+.hs-track { display: grid; gap: clamp(16px, 2.2vw, 28px); padding: 0 var(--gutter); max-width: var(--max); margin: 0 auto; }
+.hs-on .hs { position: relative; }
+.hs-on .hs-sticky { position: sticky; top: 0; height: 100vh; overflow: hidden; display: flex; flex-direction: column; justify-content: center; padding-top: 64px; }
+.hs-on .hs-track { display: flex; gap: 32px; width: max-content; max-width: none; margin: 0; padding: 0 var(--gutter); will-change: transform; }
+.hs-on .hs-track .slide-wrap { width: min(78vw, calc((100vh - 270px) * 38100000 / 26670000)); flex: none; }
+.hs-meter { display: none; }
+.hs-on .hs-meter { display: block; height: 3px; background: var(--line); border-radius: 2px; margin: 22px var(--gutter) 0; max-width: 420px; }
+.hs-meter i { display: block; height: 100%; background: var(--red); width: 100%; transform: scaleX(0); transform-origin: 0 50%; }
+.hs-on .hs { padding-top: 0; }
+.hs-on .hs .hs-head-wrap { width: 100%; }
+
+/* motion wall */
+.motion .grid2 { margin-top: 0; }
+
+/* mid-page nudge */
+.nudge { margin-top: clamp(64px, 9vw, 120px); background: var(--night); color: var(--night-text); }
+.nudge .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px 32px; padding-top: 36px; padding-bottom: 36px; }
+.nudge p { margin: 0; font-family: var(--font-pixel); font-size: clamp(13px, 1.4vw, 18px); line-height: 1.7; }
+.nudge p em { font-style: normal; color: var(--yellow); }
+
+/* contact finale */
+.finale { background: var(--night); color: var(--night-text); margin-top: clamp(64px, 9vw, 120px); padding: clamp(64px, 8vw, 110px) 0; }
+.finale-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(28px, 4vw, 64px); align-items: center; }
+.finale h2 { margin: 0 0 18px; font-family: var(--font-glacial); font-size: clamp(34px, 4.4vw, 64px); line-height: 1.02; }
+.finale p.lead { margin: 0 0 30px; color: var(--night-muted); font-size: 18px; line-height: 1.6; max-width: 40ch; }
+.start { display: inline-block; font-family: var(--font-pixel); font-size: clamp(15px, 1.6vw, 20px); color: #fff; background: var(--red); padding: 22px 30px; text-decoration: none; box-shadow: 6px 6px 0 #fff; transition: transform .12s, box-shadow .12s; }
+.start:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--yellow); }
+.start:active { transform: translate(4px, 4px); box-shadow: 2px 2px 0 #fff; }
+.start span { animation: blink 1.1s steps(1) infinite; }
+.reach { list-style: none; margin: 34px 0 0; padding: 0; display: grid; gap: 10px; }
+.reach a, .reach button { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 15px 18px; background: var(--night-2); color: var(--night-text); border: 1px solid #2a2a2a; border-radius: 12px; text-decoration: none; font-size: 16px; cursor: pointer; text-align: left; }
+.reach span { color: var(--night-muted); font-size: 14px; overflow-wrap: anywhere; text-align: right; }
+.reach a:hover, .reach button:hover { border-color: var(--red); }
+@media (max-width: 960px) { .finale-grid { grid-template-columns: 1fr; } }
+footer { background: var(--night); color: #8a8a8a; font-size: 13px; padding: 0 0 36px; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 10px 24px; justify-content: space-between; border-top: 1px solid #222; padding-top: 22px; }
+footer a { color: #cfcfcf; }
+
+/* floating hire bar */
+.dock { position: fixed; left: 50%; bottom: 18px; z-index: 40; display: flex; align-items: center; gap: 8px; padding: 8px 8px 8px 18px; background: rgba(14,14,14,.92); backdrop-filter: blur(10px); color: #fff; border-radius: 999px; box-shadow: 0 12px 34px rgba(0,0,0,.3); transform: translate(-50%, 140%); transition: transform .45s var(--ease); max-width: calc(100vw - 24px); }
+.dock.show { transform: translate(-50%, 0); }
+.dock .who { font-size: 14px; white-space: nowrap; display: flex; align-items: center; gap: 8px; }
+.dock .who i { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; }
+.dock .btn { padding: 9px 16px; font-size: 14px; }
+.dock .btn.ghost { color: #fff; }
+@media (max-width: 560px) { .dock .who { display: none; } .dock { padding: 8px; } }
+.toast { position: fixed; left: 50%; bottom: 84px; z-index: 70; transform: translate(-50%, 20px); opacity: 0; background: var(--yellow); color: #111; font-family: var(--font-pixel); font-size: 11px; padding: 12px 16px; pointer-events: none; transition: opacity .25s, transform .25s; box-shadow: 4px 4px 0 #111; }
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+/* full-screen viewer */
+.viewer { border: 0; padding: 0; margin: 0; width: 100vw; height: 100vh; max-width: none; max-height: none; background: #0b0b0b; }
+.viewer::backdrop { background: #0b0b0b; }
+.viewer[open] { display: grid; place-items: center; }
+.viewer .stage { width: min(100vw, calc(100vh * 38100000 / 26670000)); }
+.viewer .slide { box-shadow: none; border-radius: 0; }
+.viewer .ctl { position: fixed; z-index: 10; border: 0; background: rgba(255,255,255,.12); color: #fff; width: 48px; height: 48px; border-radius: 50%; cursor: pointer; font-size: 22px; display: grid; place-items: center; }
+.viewer .ctl:hover { background: rgba(255,255,255,.28); }
+.viewer .close { top: 16px; right: 16px; }
+.viewer .prev { left: 16px; top: 50%; transform: translateY(-50%); }
+.viewer .next { right: 16px; top: 50%; transform: translateY(-50%); }
+.viewer .count { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); color: #bbb; font-size: 13px; letter-spacing: .1em; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .js .slide-wrap.rv, .js .slide-wrap.rv .el, .js .slide-wrap.rv .tx, .js .slide-wrap.rv.flat .el img { opacity: 1 !important; translate: none !important; scale: none !important; transition: none !important; }
+  .js .tw { clip-path: none; } .js .in .tw { animation: none; }
+  .js .bar i { transform: none; }
+  .status i, .scroll-hint, .start span, .tw::after { animation: none; }
+}
+</style>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<header class="top over-hero">
+  <div class="top-in">
+    <a class="brand" href="#top">TANIYA CECIYA SAVIO</a>
+    <nav class="links" aria-label="Main">
+      <a class="l" href="#about">About</a>
+      <a class="l" href="#contents">Work</a>
+      <a class="l" href="#contact">Contact</a>
+      <a class="btn red" href="mailto:taniyaceciyasavio@gmail.com?subject=Illustrator%20role%20%E2%80%94%20interview">Hire me</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="hero-name">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Hey It's Taniyaaa!!</p>
+      <h1 id="hero-name"><span>Taniya</span><span>Ceciya Savio</span></h1>
+      <p class="role"><strong>Illustrator</strong> — character design, concept art, storyboards and motion illustration.</p>
+      <div class="status"><i></i>Open to illustrator roles</div>
+      <div class="ctas">
+        <a class="btn red" href="mailto:taniyaceciyasavio@gmail.com?subject=Illustrator%20role%20%E2%80%94%20interview">Hire me</a>
+        <a class="btn ghost" href="#contents">See the work</a>
+      </div>
+    </div>
+    <div class="hero-art"><div class="slide-wrap flat" id="s1" role="group" aria-label="Portfolio cover"><div class="slide" data-index="1" style="background:#ffffff"><div class="el bg" style="--i:0;left:0.0%;top:0.0%;width:100.0%;height:100.0%"><img src="assets/img/image1.webp" alt="" width="2800" height="1960" fetchpriority="high" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div></div><button class="expand" type="button" aria-label="View Portfolio cover full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div></div>
+  </div>
+  <a class="scroll-hint" href="#about" aria-label="Scroll to about">▼ SCROLL</a>
+</section>
+
+<section class="sec" id="about" aria-labelledby="about-h">
+  <div class="wrap">
+    <div class="sec-head rvh">
+      <div><p class="sec-num">00 · PLAYER ONE</p><h2 id="about-h"><span class="tw" style="--n:8">About me</span></h2></div>
+      <p class="cap">Powered by coffee, curiosity, and an unhealthy number of "What if...?" questions.</p>
+    </div>
+    <div class="slide-wrap" id="s2" role="group" aria-label="About me — experience, education and tools"><div class="slide" data-index="2" style="background:#ffffff"><div class="el bg" style="--i:0;left:0.0%;top:0.0%;width:100.0%;height:100.0%"><img src="assets/img/image2.webp" alt="" width="2800" height="1960" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el" style="--i:1;left:82.3984%;top:13.2328%;width:4.7109%;height:10.8546%;transform:rotate(-18.746deg)"><img src="assets/img/image4.svg" alt="" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div></div><button class="expand" type="button" aria-label="View About me — experience, education and tools full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div>
+    <div class="glance rvh">
+      <div class="card">
+        <h3>EXPERIENCE</h3>
+        <p class="yr">Freelancer</p>
+        <ul><li>Portraits</li><li>Concept Art</li><li>Storyboard — Advertisement, Seemati Textiles</li><li>Illustrations for lyrical video — Movie: Thandel</li></ul>
+      </div>
+      <div class="card">
+        <h3>EDUCATION</h3>
+        <p class="yr">2023 – Present</p>
+        <p>Bachelor of Visual Arts in Animation &amp; Multimedia<br>Vogue Institute of Art and Design, Bengaluru, Karnataka</p>
+        <p class="yr">2020 – 2022</p>
+        <p>Higher Secondary<br>Holy Family HSS, Muttom, Kerala</p>
+      </div>
+      <div class="card">
+        <h3>TOOLS</h3>
+        <ul class="bars">
+          <li>Procreate <span class="bar"><i style="--v:100%"></i></span></li>
+          <li>Adobe Photoshop <span class="bar"><i style="--v:100%"></i></span></li>
+          <li>Adobe Fresco <span class="bar"><i style="--v:100%"></i></span></li>
+          <li>Adobe After Effects <span class="bar"><i style="--v:45%"></i></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contents" aria-labelledby="contents-h">
+  <div class="wrap">
+    <div class="sec-head rvh">
+      <div><p class="sec-num">SELECT A SECTION</p><h2 id="contents-h"><span class="tw" style="--n:7">Content</span></h2></div>
+      <p class="cap">Click any strip to jump straight to that work.</p>
+    </div>
+    <div class="slide-wrap" id="s3" role="group" aria-label="Contents"><div class="slide" data-index="3" style="background:#ffffff"><div class="el" style="--i:0;left:27.0135%;top:59.4424%;width:18.043%;height:25.7757%"><img src="assets/img/image6.svg" alt="" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el" style="--i:1;left:67.7443%;top:61.7095%;width:18.043%;height:25.7757%"><img src="assets/img/image6.svg" alt="" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el" style="--i:2;left:85.7872%;top:59.4424%;width:18.043%;height:25.7757%"><img src="assets/img/image6.svg" alt="" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el" style="--i:3;left:-37.12%;top:-6.4286%;width:67.3262%;height:121.7472%"><img src="assets/img/image7.webp" alt="" width="1200" height="1520" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el" style="--i:4;left:0.0%;top:15.4803%;width:9.8008%;height:14.0011%"><img src="assets/img/image9.svg" alt="" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el" style="--i:5;left:41.3422%;top:59.1642%;width:18.043%;height:25.7757%"><img src="assets/img/image6.svg" alt="" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el" style="--i:6;left:52.3499%;top:65.1933%;width:15.3943%;height:21.9919%"><img src="assets/img/image6.svg" alt="" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el lift" data-name="Freeform 10" style="--i:7;left:18.2172%;top:0.0692%;width:11.8671%;height:84.9415%"><img src="assets/img/image10.webp" alt="" width="2378" height="1665" loading="lazy" decoding="async" style="left:-98.589%;top:0.0%;width:715.772%;height:100.0%"></div><div class="el lift" data-name="Freeform 11" style="--i:8;left:51.0203%;top:0.1232%;width:10.4827%;height:84.9415%"><img src="assets/img/image11.webp" alt="" width="2378" height="1665" loading="lazy" decoding="async" style="left:-343.325%;top:0.0%;width:810.302%;height:100.0%"></div><div class="el lift" data-name="Freeform 12" style="--i:9;left:90.1928%;top:0.0881%;width:10.831%;height:85.1148%"><img src="assets/img/image12.webp" alt="" width="2383" height="1668" loading="lazy" decoding="async" style="left:-333.309%;top:0.0%;width:785.844%;height:100.0%"></div><div class="el lift" data-name="Freeform 13" style="--i:10;left:81.0876%;top:0.0%;width:9.1333%;height:85.2029%"><img src="assets/img/image13.webp" alt="" width="2386" height="1670" loading="lazy" decoding="async" style="left:-316.159%;top:0.0%;width:932.885%;height:100.0%"></div><div class="el lift" data-name="Freeform 14" style="--i:11;left:30.0843%;top:0.2817%;width:10.6995%;height:82.8234%"><img src="assets/img/image14.webp" alt="" width="2382" height="1667" loading="lazy" decoding="async" style="left:-183.957%;top:-0.176%;width:795.204%;height:102.727%"></div><div class="el lift" data-name="Freeform 15" style="--i:12;left:40.7838%;top:0.1232%;width:10.2365%;height:85.0798%"><img src="assets/img/image15.webp" alt="" width="2382" height="1667" loading="lazy" decoding="async" style="left:-587.867%;top:0.0%;width:831.144%;height:100.0%"></div><div class="tx" style="--i:13;left:17.4703%;top:81.9304%;width:12.914%;height:4.4952%"><p style="text-align:center;line-height:1.642cqw;font-size:1.1727cqw"><span style="font-family:var(--font-pixel);font-size:1.1727cqw;color:#E80000">Character</span></p><p style="text-align:center;line-height:1.642cqw;font-size:1.1727cqw"><span style="font-family:var(--font-pixel);font-size:1.1727cqw;color:#E80000">Design</span></p></div><div class="tx" style="--i:14;left:89.178%;top:90.8795%;width:11.224%;height:1.6878%"><p style="text-align:center;line-height:1.267cqw;font-size:0.905cqw"><span style="font-family:var(--font-pixel);font-size:0.905cqw;color:#E80000">Storyboard</span></p></div><div class="tx" style="--i:15;left:79.9344%;top:83.5071%;width:11.4396%;height:1.6331%"><p style="text-align:center;line-height:1.229cqw;font-size:0.878cqw"><span style="font-family:var(--font-pixel);font-size:0.878cqw;color:#E80000">Illustration</span></p></div><div class="tx" style="--i:16;left:51.9753%;top:88.2602%;width:10.4652%;height:3.5435%"><p style="text-align:center;line-height:1.2927cqw;font-size:0.9233cqw"><span style="font-family:var(--font-pixel);font-size:0.9233cqw;color:#E80000">Self </span></p><p style="text-align:center;line-height:1.2927cqw;font-size:0.9233cqw"><span style="font-family:var(--font-pixel);font-size:0.9233cqw;color:#E80000">Portraits</span></p></div><div class="tx" style="--i:17;left:27.5122%;top:89.5091%;width:16.7521%;height:2.2947%"><p style="text-align:center;line-height:1.706cqw;font-size:1.2187cqw"><span style="font-family:var(--font-pixel);font-size:1.2187cqw;color:#E80000">Assets</span></p></div><div class="tx" style="--i:18;left:40.7838%;top:83.2886%;width:11.1914%;height:1.7789%"><p style="text-align:center;line-height:1.3017cqw;font-size:0.9297cqw"><span style="font-family:var(--font-pixel);font-size:0.9297cqw;color:#E80000">Environment </span></p></div><div class="tx" style="--i:19;left:61.2519%;top:82.3506%;width:11.2234%;height:5.0736%"><p style="text-align:center;line-height:1.2143cqw;font-size:0.8673cqw"><span style="font-family:var(--font-pixel);font-size:0.8673cqw;color:#E80000">Motion illustration </span></p></div><div class="el lift" data-name="Freeform 23" style="--i:20;left:61.5036%;top:-0.907%;width:10.72%;height:87.1946%"><img src="assets/img/image16.webp" alt="" width="929" height="1627" loading="lazy" decoding="async" style="left:-36.82%;top:0.0%;width:325.25%;height:100.0%"></div><div class="el lift" data-name="Freeform 24" style="--i:21;left:72.2236%;top:0.0%;width:8.8574%;height:85.2181%"><img src="assets/img/image17.webp" alt="" width="761" height="1371" loading="lazy" decoding="async" style="left:-82.991%;top:-1.229%;width:383.525%;height:102.594%"></div><div class="tx" style="--i:22;left:-18.1727%;top:39.0813%;width:62.3248%;height:12.8018%;transform:rotate(-90.0deg)"><p style="text-align:center;line-height:9.2763cqw;font-size:6.626cqw"><span style="font-family:var(--font-pixel);font-size:6.626cqw;color:#E80000">CONTENT</span></p></div><div class="tx" style="--i:23;left:70.2017%;top:89.7857%;width:10.8794%;height:3.1967%"><p style="text-align:center;line-height:1.136cqw;font-size:0.8113cqw"><span style="font-family:var(--font-pixel);font-size:0.8113cqw;color:#E80000">Card illustration </span></p></div><a class="jump" data-for="Freeform 10" href="#character-design" style="left:18.2172%;top:0.0692%;width:11.8671%;height:84.9415%" aria-label="Go to Character Design"></a><a class="jump" data-for="TextBox 16" href="#character-design" style="left:17.4703%;top:81.9304%;width:12.914%;height:4.4952%" aria-label="Go to Character Design"></a><a class="jump" data-for="Freeform 14" href="#assets" style="left:30.0843%;top:0.2817%;width:10.6995%;height:82.8234%" aria-label="Go to Assets"></a><a class="jump" data-for="TextBox 20" href="#assets" style="left:27.5122%;top:89.5091%;width:16.7521%;height:2.2947%" aria-label="Go to Assets"></a><a class="jump" data-for="Freeform 15" href="#environment" style="left:40.7838%;top:0.1232%;width:10.2365%;height:85.0798%" aria-label="Go to Environment"></a><a class="jump" data-for="TextBox 21" href="#environment" style="left:40.7838%;top:83.2886%;width:11.1914%;height:1.7789%" aria-label="Go to Environment"></a><a class="jump" data-for="Freeform 11" href="#self-portraits" style="left:51.0203%;top:0.1232%;width:10.4827%;height:84.9415%" aria-label="Go to Self Portraits"></a><a class="jump" data-for="TextBox 19" href="#self-portraits" style="left:51.9753%;top:88.2602%;width:10.4652%;height:3.5435%" aria-label="Go to Self Portraits"></a><a class="jump" data-for="Freeform 23" href="#motion-illustration" style="left:61.5036%;top:-0.907%;width:10.72%;height:87.1946%" aria-label="Go to Motion illustration"></a><a class="jump" data-for="TextBox 22" href="#motion-illustration" style="left:61.2519%;top:82.3506%;width:11.2234%;height:5.0736%" aria-label="Go to Motion illustration"></a><a class="jump" data-for="Freeform 24" href="#card-illustration" style="left:72.2236%;top:0.0%;width:8.8574%;height:85.2181%" aria-label="Go to Card illustration"></a><a class="jump" data-for="TextBox 26" href="#card-illustration" style="left:70.2017%;top:89.7857%;width:10.8794%;height:3.1967%" aria-label="Go to Card illustration"></a><a class="jump" data-for="Freeform 13" href="#illustration" style="left:81.0876%;top:0.0%;width:9.1333%;height:85.2029%" aria-label="Go to Illustration"></a><a class="jump" data-for="TextBox 18" href="#illustration" style="left:79.9344%;top:83.5071%;width:11.4396%;height:1.6331%" aria-label="Go to Illustration"></a><a class="jump" data-for="Freeform 12" href="#storyboard" style="left:90.1928%;top:0.0881%;width:10.831%;height:85.1148%" aria-label="Go to Storyboard"></a><a class="jump" data-for="TextBox 17" href="#storyboard" style="left:89.178%;top:90.8795%;width:11.224%;height:1.6878%" aria-label="Go to Storyboard"></a></div><button class="expand" type="button" aria-label="View Contents full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div>
+  </div>
+</section>
+
+<section class="sec hs" id="character-design" aria-labelledby="cd-h">
+  <div class="hs-sticky">
+    <div class="wrap hs-head-wrap">
+      <div class="sec-head rvh">
+        <div><p class="sec-num">01</p><h2 id="cd-h"><span class="tw" style="--n:16">Character Design</span></h2></div>
+        <p class="cap">Masthi: The Half-Blood — Supernatural Thriller • Dark Comedy. Turnarounds, expressions and outfit variations, plus Seban and Marty.</p>
+      </div>
+    </div>
+    <div class="hs-viewport">
+      <div class="hs-track"><div class="slide-wrap" id="s4" role="group" aria-label="Character Design — Masthi: The Half-Blood"><div class="slide" data-index="4" style="background:#ffffff"><div class="el bg" style="--i:0;left:0.0%;top:0.0%;width:100.0%;height:100.0%"><img src="assets/img/image18.webp" alt="" width="2800" height="1960" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="tx" style="--i:1;left:59.3161%;top:12.0603%;width:38.0706%;height:1.7473%"><p style="text-align:center;line-height:1.269cqw;font-size:0.9063cqw"><span style="font-family:var(--font-pixel);font-size:0.9063cqw;color:#E80000">Gen</span><span style="font-family:var(--font-pixel);font-size:0.9063cqw;color:#E80000">re: Supernatural Thriller • Dark Comedy</span></p></div></div><button class="expand" type="button" aria-label="View Character Design — Masthi: The Half-Blood full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div><div class="slide-wrap flat" id="s5" role="group" aria-label="Character Design — Masthi character turnarounds"><div class="slide" data-index="5" style="background:#ffffff"><div class="el bg" style="--i:0;left:0.0%;top:0.0%;width:100.0%;height:100.0%"><img src="assets/img/image19.webp" alt="" width="2800" height="1960" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div></div><button class="expand" type="button" aria-label="View Character Design — Masthi character turnarounds full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div><div class="slide-wrap flat" id="s6" role="group" aria-label="Character Design — Masthi character exploration"><div class="slide" data-index="6" style="background:#ffffff"><div class="el bg" style="--i:0;left:0.0%;top:0.0%;width:100.0%;height:100.0%"><img src="assets/img/image20.webp" alt="" width="2800" height="1960" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div></div><button class="expand" type="button" aria-label="View Character Design — Masthi character exploration full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div><div class="slide-wrap flat" id="s7" role="group" aria-label="Character Design — Seban"><div class="slide" data-index="7" style="background:#ffffff"><div class="el bg" style="--i:0;left:0.0%;top:0.0%;width:100.0%;height:100.0%"><img src="assets/img/image21.webp" alt="" width="2800" height="1960" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div></div><button class="expand" type="button" aria-label="View Character Design — Seban full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div><div class="slide-wrap" id="s8" role="group" aria-label="Character Design — Marty"><div class="slide" data-index="8" style="background:#C90000"><div class="el" style="--i:0;left:25.0156%;top:-36.6918%;width:90.4253%;height:230.2128%;transform:rotate(48.035deg)"><img src="assets/img/image22.webp" alt="" width="1074" height="1914" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el" style="--i:1;left:0.0%;top:5.6692%;width:100.0%;height:82.936%"><img src="assets/img/image23.webp" alt="" width="2890" height="1626" loading="lazy" decoding="async" style="left:-1.604%;top:0.0%;width:103.208%;height:100.0%"></div></div><button class="expand" type="button" aria-label="View Character Design — Marty full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div></div>
+    </div>
+    <div class="hs-meter" aria-hidden="true"><i></i></div>
+  </div>
+</section>
+
+<section class="sec" id="assets" aria-labelledby="as-h">
+  <div class="wrap">
+    <div class="sec-head rvh">
+      <div><p class="sec-num">02</p><h2 id="as-h"><span class="tw" style="--n:6">Assets</span></h2></div>
+      <p class="cap">The Mallet, The Gorgon's Band and The Sun Eater's Crest.</p>
+    </div>
+    <div class="slide-wrap flat" id="s9" role="group" aria-label="Assets — The Mallet, The Gorgon&#x27;s Band, The Sun Eater&#x27;s Crest"><div class="slide" data-index="9" style="background:#ffffff"><div class="el bg" style="--i:0;left:0.0%;top:0.34%;width:99.66%;height:99.66%"><img src="assets/img/image24.webp" alt="" width="2790" height="1953" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div></div><button class="expand" type="button" aria-label="View Assets — The Mallet, The Gorgon&#x27;s Band, The Sun Eater&#x27;s Crest full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div>
+  </div>
+</section>
+
+<section class="sec" id="environment" aria-labelledby="en-h">
+  <div class="wrap">
+    <div class="sec-head rvh">
+      <div><p class="sec-num">03</p><h2 id="en-h"><span class="tw" style="--n:11">Environment</span></h2></div>
+      <p class="cap">From line sketch to final paint.</p>
+    </div>
+    <div class="grid2" style="margin-top:0"><div class="slide-wrap flat" id="s10" role="group" aria-label="Environment — ruins"><div class="slide" data-index="10" style="background:#ffffff"><div class="el bg" style="--i:0;left:0.0%;top:0.0%;width:100.0%;height:100.0%"><img src="assets/img/image25.webp" alt="" width="2800" height="1960" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div></div><button class="expand" type="button" aria-label="View Environment — ruins full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div><div class="slide-wrap flat" id="s11" role="group" aria-label="Environment — valley"><div class="slide" data-index="11" style="background:#ffffff"><div class="el bg" style="--i:0;left:0.0%;top:0.0%;width:100.0%;height:100.0%"><img src="assets/img/image26.webp" alt="" width="2800" height="1960" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div></div><button class="expand" type="button" aria-label="View Environment — valley full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div></div>
+  </div>
+</section>
+
+<section class="sec" id="self-portraits" aria-labelledby="sp-h">
+  <div class="wrap">
+    <div class="sec-head rvh">
+      <div><p class="sec-num">04</p><h2 id="sp-h"><span class="tw" style="--n:14">Self Portraits</span></h2></div>
+    </div>
+    <div class="slide-wrap flat" id="s12" role="group" aria-label="Self Portraits"><div class="slide" data-index="12" style="background:#ffffff"><div class="el bg" style="--i:0;left:0.2766%;top:0.0%;width:100.0%;height:100.0%"><img src="assets/img/image27.webp" alt="" width="2800" height="1960" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div></div><button class="expand" type="button" aria-label="View Self Portraits full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div>
+  </div>
+</section>
+
+<div class="nudge">
+  <div class="wrap">
+    <p>Like what you see? <em>Let's talk.</em></p>
+    <a class="btn red" href="mailto:taniyaceciyasavio@gmail.com?subject=Illustrator%20role%20%E2%80%94%20interview">Email Taniya</a>
+  </div>
+</div>
+
+<section class="sec motion" id="motion-illustration" aria-labelledby="mo-h">
+  <div class="wrap">
+    <div class="sec-head rvh">
+      <div><p class="sec-num">05</p><h2 id="mo-h"><span class="tw" style="--n:19">Motion illustration</span></h2></div>
+      <p class="cap">Song promo animation and animated illustrations. Press 🔇 on any video for sound.</p>
+    </div>
+    <div class="grid2"><div class="slide-wrap" id="s13" role="group" aria-label="Motion illustration — Song promo animation"><div class="slide" data-index="13" style="background:#ffffff"><div class="el bg" style="--i:0;left:0.0%;top:-1.38%;width:99.5651%;height:99.5651%"><img src="assets/img/image28.webp" alt="" width="2788" height="1952" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el" style="--i:1;left:27.2368%;top:-1.9293%;width:79.6952%;height:202.4005%;transform:rotate(59.264deg)"><img src="assets/img/image29.webp" alt="" width="675" height="1200" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el vid" style="--i:2;left:52.2768%;top:0.4349%;width:40.068%;height:101.7599%"><video style="left:0.0%;top:0.0%;width:100.0%;height:100.0%" src="assets/video/VAHTv1oOd8s.mp4" poster="assets/img/image30.webp" muted loop playsinline preload="none" aria-label="Song promo animation"></video><button class="snd" type="button" aria-label="Turn sound on" aria-pressed="false"><span aria-hidden="true">&#128263;</span></button></div></div><button class="expand" type="button" aria-label="View Motion illustration — Song promo animation full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div><div class="slide-wrap" id="s14" role="group" aria-label="Motion illustration — arrow"><div class="slide" data-index="14" style="background:#ffffff"><div class="el bg" style="--i:0;left:0.0%;top:0.0%;width:100.0%;height:100.0%"><img src="assets/img/image31.webp" alt="" width="2800" height="1960" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el" style="--i:1;left:30.6393%;top:23.9566%;width:69.2293%;height:176.2502%;transform:rotate(-110.689deg)"><img src="assets/img/image32.webp" alt="" width="1074" height="1914" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el" style="--i:2;left:50.936%;top:-2.3753%;width:44.9387%;height:114.1301%;transform:rotate(-7.617deg)"><img src="assets/img/image33.webp" alt="" width="1080" height="1920" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el vid" style="--i:3;left:53.734%;top:0.0%;width:39.3426%;height:100.0%"><video style="left:0.0%;top:0.0%;width:100.0%;height:100.0%" src="assets/video/VAHbGQuTtpA.mp4" poster="assets/img/image34.webp" muted loop playsinline preload="none" aria-label="Motion illustration — arrow"></video><button class="snd" type="button" aria-label="Turn sound on" aria-pressed="false"><span aria-hidden="true">&#128263;</span></button></div></div><button class="expand" type="button" aria-label="View Motion illustration — arrow full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div><div class="slide-wrap" id="s15" role="group" aria-label="Motion illustration — shower scene"><div class="slide" data-index="15" style="background:#ffffff"><div class="el bg" style="--i:0;left:0.0%;top:0.0%;width:100.0%;height:100.0%"><img src="assets/img/image35.webp" alt="" width="2800" height="1960" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el" style="--i:1;left:14.2226%;top:6.5715%;width:55.8245%;height:165.64%;transform:rotate(-38.359deg)"><img src="assets/img/image36.webp" alt="" width="1080" height="1920" loading="lazy" decoding="async" style="left:-16.831%;top:0.0%;width:116.831%;height:100.0%"></div><div class="el vid" style="--i:2;left:8.163%;top:0.0%;width:39.375%;height:100.0%"><video style="left:0.0%;top:0.0%;width:100.0%;height:100.0%" src="assets/video/VAHbI5_edp8.mp4" poster="assets/img/image37.webp" muted loop playsinline preload="none" aria-label="Motion illustration — shower scene"></video><button class="snd" type="button" aria-label="Turn sound on" aria-pressed="false"><span aria-hidden="true">&#128263;</span></button></div></div><button class="expand" type="button" aria-label="View Motion illustration — shower scene full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div><div class="slide-wrap" id="s16" role="group" aria-label="Motion illustration — forest"><div class="slide" data-index="16" style="background:#ffffff"><div class="el bg" style="--i:0;left:0.0%;top:0.0%;width:100.0%;height:100.0%"><img src="assets/img/image38.webp" alt="" width="2800" height="1960" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el" style="--i:1;left:14.7034%;top:-21.6313%;width:94.0083%;height:238.7512%;transform:rotate(47.483deg)"><img src="assets/img/image39.webp" alt="" width="1080" height="1920" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el" style="--i:2;left:56.7262%;top:3.5904%;width:41.6266%;height:105.7182%"><img src="assets/img/image40.webp" alt="" width="1080" height="1920" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el vid" style="--i:3;left:52.674%;top:-2.4151%;width:40.326%;height:102.4151%"><video style="left:0.0%;top:0.0%;width:100.0%;height:100.0%" src="assets/video/VAHbJBIadO4.mp4" poster="assets/img/image41.webp" muted loop playsinline preload="none" aria-label="Motion illustration — forest"></video><button class="snd" type="button" aria-label="Turn sound on" aria-pressed="false"><span aria-hidden="true">&#128263;</span></button></div></div><button class="expand" type="button" aria-label="View Motion illustration — forest full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div></div>
+  </div>
+</section>
+
+<section class="sec" id="card-illustration" aria-labelledby="ca-h">
+  <div class="wrap">
+    <div class="sec-head rvh">
+      <div><p class="sec-num">06</p><h2 id="ca-h"><span class="tw" style="--n:17">Card illustration</span></h2></div>
+      <p class="cap">Void, Tide, Ember, Blaze, Moss and Novah. Hover a card to pick it up.</p>
+    </div>
+    <div class="slide-wrap" id="s17" role="group" aria-label="Card illustration"><div class="slide" data-index="17" style="background:#ffffff"><div class="el bg" style="--i:0;left:0.0105%;top:-1.1283%;width:99.9895%;height:104.0571%"><img src="assets/img/image42.webp" alt="" width="2914" height="2040" loading="lazy" decoding="async" style="left:-2.033%;top:0.0%;width:104.066%;height:100.0%"></div><div class="el lift" data-name="Freeform 3" style="--i:1;left:1.9707%;top:5.3209%;width:12.5558%;height:47.2525%"><img src="assets/img/image43.webp" alt="" width="352" height="927" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el lift" data-name="Freeform 4" style="--i:2;left:1.9707%;top:46.3511%;width:12.5558%;height:47.2525%"><img src="assets/img/image44.webp" alt="" width="352" height="927" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el lift" data-name="Freeform 5" style="--i:3;left:13.4669%;top:12.1293%;width:12.4033%;height:46.6787%"><img src="assets/img/image45.webp" alt="" width="347" height="914" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el lift" data-name="Freeform 6" style="--i:4;left:13.4669%;top:52.5734%;width:12.6439%;height:47.584%"><img src="assets/img/image46.webp" alt="" width="354" height="933" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el lift" data-name="Freeform 7" style="--i:5;left:24.9114%;top:-1.1283%;width:12.5558%;height:47.2525%"><img src="assets/img/image47.webp" alt="" width="352" height="927" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el lift" data-name="Freeform 8" style="--i:6;left:24.9114%;top:40.2548%;width:12.6381%;height:47.5622%"><img src="assets/img/image48.webp" alt="" width="354" height="933" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el lift" data-name="Freeform 9" style="--i:7;left:36.3748%;top:23.494%;width:12.2832%;height:46.4833%"><img src="assets/img/image49.webp" alt="" width="344" height="911" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el" style="--i:8;left:60.0935%;top:30.0149%;width:53.6814%;height:115.0315%;transform:rotate(45.0deg)"><img src="assets/img/image50.webp" alt="" width="800" height="1200" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el" style="--i:9;left:12.257%;top:16.8076%;width:93.1014%;height:86.1212%"><img src="assets/img/image51.webp" alt="" width="2607" height="1825" loading="lazy" decoding="async" style="left:0.0%;top:-4.052%;width:100.0%;height:108.104%"></div></div><button class="expand" type="button" aria-label="View Card illustration full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div>
+  </div>
+</section>
+
+<section class="sec" id="illustration" aria-labelledby="il-h">
+  <div class="wrap">
+    <div class="sec-head rvh">
+      <div><p class="sec-num">07</p><h2 id="il-h"><span class="tw" style="--n:12">Illustration</span></h2></div>
+      <p class="cap">Lyrical video illustration — movie Thandel.</p>
+    </div>
+    <div class="slide-wrap flat" id="s18" role="group" aria-label="Illustration — lyrical video illustration"><div class="slide" data-index="18" style="background:#ffffff"><div class="el bg" style="--i:0;left:0.0%;top:0.0%;width:100.0%;height:100.0%"><img src="assets/img/image52.webp" alt="" width="2800" height="1960" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div></div><button class="expand" type="button" aria-label="View Illustration — lyrical video illustration full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div>
+  </div>
+</section>
+
+<section class="sec" id="storyboard" aria-labelledby="sb-h">
+  <div class="wrap">
+    <div class="sec-head rvh">
+      <div><p class="sec-num">08</p><h2 id="sb-h"><span class="tw" style="--n:10">Storyboard</span></h2></div>
+      <p class="cap">Advertisement — Seemati Textiles.</p>
+    </div>
+    <div class="slide-wrap flat" id="s19" role="group" aria-label="Storyboard — advertisement, Seemati Textiles"><div class="slide" data-index="19" style="background:#ffffff"><div class="el bg" style="--i:0;left:0.0%;top:-0.3571%;width:100.3571%;height:100.3571%"><img src="assets/img/image53.webp" alt="" width="2810" height="1967" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div></div><button class="expand" type="button" aria-label="View Storyboard — advertisement, Seemati Textiles full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div>
+  </div>
+</section>
+
+<section class="sec" id="cherry-on-top" aria-labelledby="ch-h">
+  <div class="wrap">
+    <div class="sec-head rvh">
+      <div><p class="sec-num">BONUS</p><h2 id="ch-h"><span class="tw" style="--n:13">Cherry on top</span></h2></div>
+      <p class="cap">Paintings. Hover one to take a closer look.</p>
+    </div>
+    <div class="slide-wrap" id="s20" role="group" aria-label="Cherry on top — traditional paintings"><div class="slide" data-index="20" style="background:#ffffff"><div class="el bg" style="--i:0;left:0.0%;top:0.0%;width:100.0%;height:100.0%"><img src="assets/img/image54.webp" alt="" width="2800" height="1960" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el" style="--i:1;left:21.8745%;top:9.6429%;width:78.4221%;height:199.6539%;transform:rotate(67.952deg)"><img src="assets/img/image55.webp" alt="" width="1074" height="1914" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el lift" data-name="Freeform 4" style="--i:2;left:9.0922%;top:24.7921%;width:17.5626%;height:31.9588%"><img src="assets/img/image56.webp" alt="" width="744" height="1232" loading="lazy" decoding="async" style="left:-29.931%;top:-45.829%;width:151.372%;height:196.83%"></div><div class="el lift" data-name="Freeform 5" style="--i:3;left:30.3548%;top:21.766%;width:23.6392%;height:32.2668%"><img src="assets/img/image57.webp" alt="" width="662" height="633" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el lift" data-name="Freeform 6" style="--i:4;left:56.444%;top:8.4936%;width:23.3965%;height:45.5391%"><img src="assets/img/image58.webp" alt="" width="655" height="1092" loading="lazy" decoding="async" style="left:0.0%;top:-9.784%;width:100.0%;height:122.386%"></div><div class="el lift" data-name="Freeform 7" style="--i:5;left:57.6844%;top:56.7509%;width:16.7409%;height:31.8154%"><img src="assets/img/image59.webp" alt="" width="675" height="754" loading="lazy" decoding="async" style="left:-20.684%;top:-9.157%;width:144.017%;height:120.869%"></div><div class="el lift" data-name="Freeform 8" style="--i:6;left:9.0922%;top:61.9978%;width:16.5676%;height:34.1054%"><img src="assets/img/image60.webp" alt="" width="558" height="726" loading="lazy" decoding="async" style="left:-13.828%;top:-8.462%;width:120.179%;height:108.462%"></div><div class="el lift" data-name="Freeform 9" style="--i:7;left:30.3548%;top:56.7509%;width:23.6392%;height:36.0331%"><img src="assets/img/image61.webp" alt="" width="662" height="706" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el" style="--i:8;left:84.5405%;top:-4.6437%;width:52.0292%;height:111.4911%"><img src="assets/img/image62.webp" alt="" width="800" height="1200" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div></div><button class="expand" type="button" aria-label="View Cherry on top — traditional paintings full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div>
+  </div>
+</section>
+
+<section class="finale" id="contact" aria-labelledby="ct-h">
+  <div class="wrap finale-grid">
+    <div class="finale-art"><div class="slide-wrap" id="s21" role="group" aria-label="Thank you — contact"><div class="slide" data-index="21" style="background:#ffffff"><div class="el" style="--i:0;left:10.244%;top:-40.851%;width:71.8003%;height:182.35%;transform:rotate(-90.0deg)"><img src="assets/img/image63.webp" alt="" width="675" height="1200" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="el" style="--i:1;left:15.0327%;top:69.5234%;width:3.5758%;height:5.1082%"><a class="fill" href="https://www.behance.net/taniyaceciya" target="_blank" rel="noopener" aria-label="Behance"><img src="assets/img/image64.webp" alt="" width="100" height="100" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></a></div><div class="el" style="--i:2;left:15.0327%;top:77.3192%;width:2.6675%;height:3.8107%"><a class="fill" href="https://www.linkedin.com/in/taniya-ceciya-savio-913298375" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="assets/img/image65.webp" alt="" width="75" height="75" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></a></div><div class="el" style="--i:3;left:14.8171%;top:84.672%;width:3.0986%;height:3.1429%"><a class="fill" href="mailto:taniyaceciyasavio@gmail.com" aria-label="Email"><img src="assets/img/image66.webp" alt="" width="87" height="62" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></a></div><div class="el" style="--i:4;left:2.5119%;top:27.2065%;width:10.778%;height:15.9557%;transform:scale(-1,1)"><img src="assets/img/image68.svg" alt="" loading="lazy" decoding="async" style="left:0.0%;top:0.0%;width:100.0%;height:100.0%"></div><div class="tx" style="--i:5;left:10.349%;top:21.6826%;width:56.8456%;height:37.8051%"><p style="text-align:center;line-height:15.9167cqw;font-size:11.369cqw"><span style="font-family:var(--font-pixel);font-size:11.369cqw;color:#E80000">THANK</span></p><p style="text-align:left;line-height:6.3667cqw;font-size:11.369cqw"><span style="font-family:var(--font-pixel);font-size:11.369cqw;color:#E80000">YOU.</span></p></div><div class="tx" style="--i:6;left:13.7082%;top:70.7211%;width:26.7199%;height:2.427%"><p style="text-align:center;line-height:1.7573cqw;font-size:1.2553cqw"><a href="https://www.behance.net/taniyaceciya" target="_blank" rel="noopener"><span style="font-family:var(--font-glacial);font-size:1.2553cqw;color:#E80000;font-weight:700;text-decoration:underline">TANIYA CECIYA SAVIO</span></a></p></div><div class="tx" style="--i:7;left:-3.3221%;top:77.8836%;width:60.7805%;height:2.3961%"><p style="text-align:center;line-height:1.734cqw;font-size:1.2387cqw"><a href="https://www.linkedin.com/in/taniya-ceciya-savio-913298375" target="_blank" rel="noopener"><span style="font-family:var(--font-glacial);font-size:1.2387cqw;color:#E80000;font-weight:700;text-decoration:underline">TANIYA CECIYA SAVIO</span></a></p></div><div class="tx" style="--i:8;left:6.0723%;top:84.987%;width:48.9724%;height:2.8279%"><p style="text-align:center;line-height:2.068cqw;font-size:1.477cqw"><a href="mailto:taniyaceciyasavio@gmail.com"><span style="font-family:var(--font-glacial);font-size:1.477cqw;color:#E80000;font-weight:700">taniyaceciyasavio@gmail.com</span></a></p></div></div><button class="expand" type="button" aria-label="View Thank you — contact full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div></div>
+    <div>
+      <p class="eyebrow">PLAYER 2, READY?</p>
+      <h2 id="ct-h">Let&#x27;s work together</h2>
+      <p class="lead">I&#x27;m looking for illustrator roles — full-time, studio or freelance. Get in touch and I&#x27;ll reply soon.</p>
+      <a class="start" href="mailto:taniyaceciyasavio@gmail.com?subject=Illustrator%20role%20%E2%80%94%20interview"><span>▶</span> PRESS START</a>
+      <ul class="reach">
+        <li><button type="button" class="copy" data-email="taniyaceciyasavio@gmail.com">Copy email <span>taniyaceciyasavio@gmail.com</span></button></li>
+        <li><a href="https://www.behance.net/taniyaceciya" target="_blank" rel="noopener">Behance <span>behance.net/taniyaceciya</span></a></li>
+        <li><a href="https://www.linkedin.com/in/taniya-ceciya-savio-913298375" target="_blank" rel="noopener">LinkedIn <span>Taniya Ceciya Savio</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© Taniya Ceciya Savio · All artwork is the original work of the artist.</span>
+    <a href="slides.html">View as a deck</a>
+  </div>
+</footer>
+
+<div class="dock" aria-label="Contact Taniya">
+  <span class="who"><i></i>Taniya · open to illustrator roles</span>
+  <button type="button" class="btn ghost copy" data-email="taniyaceciyasavio@gmail.com">Copy email</button>
+  <a class="btn red" href="mailto:taniyaceciyasavio@gmail.com?subject=Illustrator%20role%20%E2%80%94%20interview">Hire me</a>
+</div>
+<div class="toast" role="status" aria-live="polite"></div>
+
+<dialog class="viewer" aria-label="Full-screen slide viewer">
+  <div class="stage"></div>
+  <button class="ctl close" type="button" aria-label="Close">&#x2715;</button>
+  <button class="ctl prev" type="button" aria-label="Previous slide">&#x2190;</button>
+  <button class="ctl next" type="button" aria-label="Next slide">&#x2192;</button>
+  <div class="count" aria-live="polite"></div>
+</dialog>
+<script src="assets/main.js" defer></script>
+</body>
+</html>

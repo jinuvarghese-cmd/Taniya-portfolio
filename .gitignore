@@ -1,0 +1,5 @@
+# Not part of the website
+.claude/
+upload-to-cloudflare.zip
+*.pptx
+.DS_Store
